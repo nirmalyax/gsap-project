@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
+
 
 /* ---------------- Navbar and burger menu ------------------ */
 .nav {
@@ -11,13 +7,21 @@
     scroll-behavior: smooth;
 }
 
+.logo{
+    margin: 2.8rem 84rem 1rem 0rem;
+    position: fixed;
+    z-index: 11;
+    color: rgb(248,84,40);
+    letter-spacing: 4px;
+}
+
 .burger-menu {
-    position: absolute;
+    position: fixed;
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: end;
     cursor: pointer;
     gap: 3.5px;
     z-index: 11;
@@ -46,15 +50,15 @@
 .menu {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.792);
+    position: fixed;
     z-index: 10;
 }
 
 .menu_items{
     list-style: none;
     font-size: 7rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.597);
     cursor: pointer;
 }
 /* ------------- sliding menu ------------------ */

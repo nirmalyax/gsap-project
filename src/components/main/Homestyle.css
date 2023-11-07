@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300&family=Dancing+Script&display=swap');
 
-:root{
-    font-family: 'Dancing Script', cursive;
-    
-}
 @font-face {
-    font-family: myfont ;
+    font-family: myfont;
     src: url(src/assets/Dirtyline.ttf);
 }
 
@@ -15,21 +12,67 @@
     box-sizing: border-box;
 }
 
-.body{
+.body {
     width: 100%;
     height: 90%;
     display: flex;
     justify-content: space-around;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
-.left{
+
+.left {
+    opacity: 0%;
     color: rgba(255, 255, 255, 0.735);
     margin-top: 8rem;
     line-height: 12rem;
     font-family: myfont;
     font-size: 5rem;
     text-align: center;
+    letter-spacing: 12px;
+}
+
+.border {
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.motion {
+    background-color: rgba(255, 255, 255, 0.735);
+    color: rgb(61, 61, 61);
+    overflow: hidden;
+    padding: 12px;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+    height: 100rem;
+}
+
+.motion p {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-bottom: -29px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
