@@ -16,7 +16,6 @@ export default function () {
         scale: 1,
         duration: 2,
         scrollTrigger: {
-          scrub:"true",
           trigger: el,
           markers: false,
         },
@@ -34,7 +33,6 @@ export default function () {
         scale: 1,
         duration: 2,
         scrollTrigger: {
-          scrub:"true",
           trigger: el,
           markers: false,
         },
