@@ -46,14 +46,14 @@ export default function () {
       //opacity: "100%",
       filter: "blur(15px)",
       ease: "power3.out",
-      duration:9,
+      duration: 9,
       scrollTrigger: {
         trigger: blur.current,
-        start: "490px center", 
+        start: "490px center", //indicates the starting point of the webpage
         filter: "blur(25px)",
-        scrub: 2,
+        scrub: 2, //scrub helps to revert back the scrolling effect
         // start: "top 150px",
-         end: "top 50px",
+        end: "top 50px",
         markers: true,
       },
     });
